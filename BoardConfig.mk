@@ -1,6 +1,6 @@
 # Platform
 DEVICE_CODENAME := f62ins
-DEVICE_PATH := device/samsung/$(DEVICE_CODENAME)
+DEVICE_PATH := device/samsung/f62ins
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOARD_PLATFORM_GPU := mali-g76
@@ -53,7 +53,7 @@ PLATFORM_SECURITY_PATCH := 2022-03-01
 BOARD_KERNEL_CMDLINE := \
 	androidboot.selinux=permissive
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/image.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
@@ -69,7 +69,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-BOARD_KERNEL_IMAGE_NAME := Image.img
+BOARD_KERNEL_IMAGE_NAME := image.img
 
 
 # File systems
