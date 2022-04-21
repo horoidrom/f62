@@ -17,6 +17,7 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
+TARGET_SUPPORTS_64_BIT_APPS := false
 
 # Secondary Architecture
 TARGET_2ND_ARCH := arm
