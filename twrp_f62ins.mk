@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from f62 device
-$(call inherit-product, device/samsung/f62/device.mk)
+$(call inherit-product, device/samsung/f62ins/device.mk)
 # Device identifier
 PRODUCT_DEVICE := f62ins
 PRODUCT_NAME := twrp_f62ins
